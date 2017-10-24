@@ -89,5 +89,58 @@ namespace Model.Dao
            
             return model.ToList();
         }
+        public Product GetById(long id)
+        {
+            return db.Products.Find(id);
+        }
+        public long Create(Product Product)
+        {
+
+            if (string.IsNullOrEmpty(Product.MetaTitle))
+            {
+
+            }
+            Product.CreatedDate = DateTime.Now;
+            Product.ViewCount = 0;
+            db.Products.Add(Product);
+            db.SaveChanges();
+
+            return Product.ID;
+        }
+        public bool Update(Product entity)
+        {
+            try
+            {
+                var Product = db.Products.Find(entity.ID);
+                Product.Name = entity.Name;
+                Product.MetaTitle = entity.MetaTitle;
+                Product.Description = entity.Description;
+                Product.CategoryID = entity.CategoryID;
+                Product.Warranty = entity.Warranty;
+                Product.MetaKeywods = entity.MetaKeywods;
+                Product.MetaDescriptions = entity.MetaDescriptions;
+                Product.Status = Product.Status;
+                
+                Product.TopHot = Product.TopHot;
+                Product.ModifiedBy = entity.ModifiedBy;
+                Product.ModifiedDate = DateTime.Now;
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                //logging
+                return false;
+            }
+
+        }
+
+        
+
+        public IEnumerable<Product> ListAllPaging(int page, int pageSize)
+        {
+            IQueryable<Product> model = db.Products;
+            return model.OrderByDescending(x => x.CreatedDate).ToPagedList(page, pageSize);
+        }
     }
 }

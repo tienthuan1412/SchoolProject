@@ -147,7 +147,7 @@ namespace OnlineShop.Controllers
 
                     total += (item.Product.Price.GetValueOrDefault(0) * item.Quantity);
                 }
-                
+
             }
             catch
             {
@@ -155,10 +155,11 @@ namespace OnlineShop.Controllers
                 return Redirect("/loi-thanh-toan");
             }
             return Redirect("/hoan-thanh");
-            
+
         }
         public ActionResult Success()
         {
+            Session[CartSession] = null;
             return View();
         }
 
