@@ -10,7 +10,7 @@
     <div class="section group">
         @if (Model.Count > 0)
         {
-            <table class="table-bordered">
+            <table class="table table-hover" style="border">
                 <thead>
                     <tr>
                         <td>Mã SP</td>
@@ -29,20 +29,24 @@
                             <td>@item.Product.ID</td>
                             <td>@item.Product.Name</td>
                             <td><img src="@item.Product.Image" width="100" /></td>
-                            <td><input type="text" class="txtQuantity" data-id="@item.Product.ID" value="@item.Quantity" /></td>
+                            <td><input type="text" class="txtQuantity" data-id="@item.Product.ID" value="@item.Quantity" style="text-align:center"/></td>
                             <td>@item.Product.Price.GetValueOrDefault(0).ToString("N0")</td>
                             <td>@((item.Product.Price.GetValueOrDefault(0) * item.Quantity).ToString("N0"))</td>
-                            <td><a href="#" data-id="@item.Product.ID" class="btn-delete">Xoá</a></td>
+                            <td><a href="#" data-id="@item.Product.ID" class="btn btn-danger">Xoá</a></td>
                         </tr>
                     }
 
                 </tbody>
             </table>
+            <br />
 
-            <button id="btnContinue" class="btn">Tiếp tục mua hàng</button>
-            <button id="btnUpdate" class="btn">Cập nhật giỏ hàng</button>
-            <button id="btnDeleteAll" class="btn">Xoá giỏ hàng</button>
-            <button id="btnPayment" class="btn">Thanh toán</button>
+            <div style="padding-left: 300px">
+                <button id="btnContinue" class="btn btn-primary">Tiếp tục mua hàng</button>
+                <button id="btnUpdate" class="btn btn-warning">Cập nhật giỏ hàng</button>
+                <button id="btnDeleteAll" class="btn btn-danger">Xoá giỏ hàng</button>
+                <button id="btnPayment" class="btn btn-info">Thanh toán</button>
+            </div>
+            
         }
         else
         {

@@ -12,7 +12,7 @@
     {
         @Html.AntiForgeryToken()
 
-        <div class="form-horizontal">
+        <div class="form-horizontal" style="margin: 0 auto">
             <h4>Đăng ký thành viên</h4>
             <hr />
             <div class="form-group">
@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10" style="width: 30%">
                     @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
                 </div>
@@ -32,7 +32,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10"  style="width: 30%">
                     @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
                 </div>
@@ -40,7 +40,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.ConfirmPassword, new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10"  style="width: 30%">
                     @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
                 </div>
@@ -48,7 +48,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10"  style="width: 30%">
                     @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
                 </div>
@@ -56,7 +56,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10"  style="width: 30%">
                     @Html.TextAreaFor(model => model.Address, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
                 </div>
@@ -64,7 +64,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10"  style="width: 30%">
                     @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
                 </div>
@@ -72,7 +72,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10"  style="width: 30%">
                     @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
                 </div>
@@ -80,9 +80,9 @@
            
 
 
-            <div class="form-group">
+            <div class="form-group" style="padding-left: 11%">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Đăng ký" class="btn btn-default" />
+                    <input type="submit" value="Đăng ký" class="btn btn-info" />
                 </div>
             </div>
         </div>
