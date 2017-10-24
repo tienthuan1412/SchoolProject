@@ -11,7 +11,7 @@ namespace OnlineShop.Models
         [Key]
         public long ID { set; get; }
 
-        [Display(Name = "Tên đăng nhập")] // Tạo tên đăng nhậpfgfg
+        [Display(Name = "Tên đăng nhập")] // Tạo tên đăng nhập
         [Required(ErrorMessage = "Yêu cầu nhập tên đăng nhập")]
 
         public string UserName { set; get; }

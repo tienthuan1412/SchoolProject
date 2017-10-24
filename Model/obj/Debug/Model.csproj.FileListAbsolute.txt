@@ -53,3 +53,15 @@ C:\Users\DELL\Desktop\New folder (3)\SchoolProject\Model\bin\Debug\System.Web.We
 C:\Users\DELL\Desktop\New folder (3)\SchoolProject\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Desktop\New folder (3)\SchoolProject\Model\obj\Debug\Model.dll
 C:\Users\DELL\Desktop\New folder (3)\SchoolProject\Model\obj\Debug\Model.pdb
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.WebPages.dll
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.Mvc.dll
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.Razor.dll
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.WebPages.xml
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.Mvc.xml
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.Razor.xml
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\MINH TRUONG\Desktop\ASPNet\SchoolProject\Model\bin\Debug\System.Web.WebPages.Razor.xml
